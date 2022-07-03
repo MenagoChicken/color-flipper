@@ -10,5 +10,10 @@ const colors = [
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
-console.log(btn);
-console.log(color);
+btn.addEventListener("click", function () {
+  //get random numbner between 0-5
+  const randomNumber = 4;
+  document.body.style.backgroundColor = colors[randomNumber];
+  color.textContent = colors[randomNumber];
+  color.style.color = colors[randomNumber];
+});
