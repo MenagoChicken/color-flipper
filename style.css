@@ -1,0 +1,16 @@
+/* 
+Colors:
+#E7ECEF - light grey
+#8B8C89 - grey
+#274C77 - dark blue
+#6096BA - blue */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: rebeccapurple;
+}
