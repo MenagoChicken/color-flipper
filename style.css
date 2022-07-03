@@ -3,7 +3,9 @@ Colors:
 #E7ECEF - light grey
 #8B8C89 - grey
 #274C77 - dark blue
-#6096BA - blue 
+#6096BA - blue
+#fefae0 - start background 
+#001219 - background of a text and button
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
@@ -17,6 +19,7 @@ Colors:
 
 body {
   font-family: "Oswald", sans-serif;
+  background-color: #fefae0;
 }
 
 ul {
@@ -35,21 +38,15 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  font-family: "Oswald", sans-serif;
 }
-h1 {
-  font-size: 3rem;
-}
+
 h2 {
   font-size: 2rem;
 }
-h3 {
-  font-size: 1.25rem;
-}
+
 h4 {
   font-size: 0.875rem;
-}
-p {
-  margin-bottom: 1.25rem;
 }
 
 /* End Global Styles */
@@ -93,3 +90,47 @@ nav a:hover {
 }
 
 /* End Navbar */
+
+/* Container */
+main {
+  min-height: calc(100vh - 3rem);
+  /* there has to be space between values and a sign - LOL */
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  background: #001219;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.color {
+  color: #fefae0;
+}
+
+.btn-hero {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  background: transparent;
+  color: #001219;
+  border: 2px solid;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  padding: 00.75rem 1.25rem;
+  cursor: pointer;
+}
+
+.btn-hero:hover {
+  color: white;
+  background-color: #001219;
+}
+
+/* End Container */
